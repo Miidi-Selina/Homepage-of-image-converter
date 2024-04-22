@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Format Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Image Format Converter</h1>
+    </header>
+    <main>
+        <section class="converter">
+            <h2>Convert Your Images</h2>
+            <form action="convert.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="image" accept="image/*" required>
+                <select name="format" required>
+                    <option value="">Select Format</option>
+                    <option value="jpeg">JPEG</option>
+                    <option value="png">PNG</option>
+                    <option value="gif">GIF</option>
+                    <!-- Add more format options as needed -->
+                </select>
+                <a href="convert.html"><button type="submit">Convert</button></a>
+                
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Image Format Converter</p>
+    </footer>
+</body>
+</html>
